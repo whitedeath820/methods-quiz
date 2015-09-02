@@ -31,4 +31,10 @@ class MethodsQuizTest < MiniTest::Test
 		assert_equal false, @m.icy_hot?(0, 100)
 	end
 
+	def test_closer_to
+		assert_equal 10, @m.closer_to(11, 10, 1)
+		assert_equal 0, @m.closer_to(0, -1, 1)
+		assert_equal 11, @m.closer_to(10, 0, 11)
+	end
+
 end
