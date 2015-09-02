@@ -28,7 +28,7 @@ class MethodsQuizTest < MiniTest::Test
 		assert_equal true, @m.icy_hot?(-1, 101)
 		assert_equal false, @m.icy_hot?(-1, 100)
 		assert_equal false, @m.icy_hot?(0, 101)
-		assert_equal false,, @m.icy_hot?(0, 100)
+		assert_equal false, @m.icy_hot?(0, 100)
 	end
 
 end

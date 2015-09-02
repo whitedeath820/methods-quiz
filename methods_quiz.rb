@@ -12,8 +12,10 @@ module MethodsQuiz
 			return "not" + str
 		end
 	end	
-	# TODO - write icy_hot?
-	
+
+	def icy_hot?(a, b)	
+		a > 100 && b < 0 || a < 0 && b > 100
+	end
 	# TODO - write closer_to
 
 	# TODO - write two_as_one?
