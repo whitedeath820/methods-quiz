@@ -35,6 +35,15 @@ module MethodsQuiz
 		bc = b + c
 		ab == c || ac == b || bc == a
 	end
-	# TODO - write pig_latinify
+
+	def pig_latinify(str)
+		final = str.delete(' ').downcase.gsub(/[^a-zA-Z ]/,'')
+		if final[0] == 'a' || 'e' || 'i' || 'o' || 'u'
+			return final + "way"
+		else
+			return final + "ay"
+		end
+	
+	end
 
 end
