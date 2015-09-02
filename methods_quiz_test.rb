@@ -24,4 +24,11 @@ class MethodsQuizTest < MiniTest::Test
 		assert_equal "notbye", @m.not_string("notbye")
 	end
 
+	def test_icy_hot?
+		assert_equal true, @m.icy_hot?(-1, 101)
+		assert_equal false, @m.icy_hot?(-1, 100)
+		assert_equal false, @m.icy_hot?(0, 101)
+		assert_equal false,, @m.icy_hot?(0, 100)
+	end
+
 end
