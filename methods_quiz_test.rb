@@ -42,6 +42,11 @@ class MethodsQuizTest < MiniTest::Test
 		assert_equal false, @m.two_as_one?(1, 1, 1)
 		assert_equal true, @m.two_as_one?(0, 0, 0)
 		assert_equal true, @m.two_as_one?(-1, -1, 0)
-		
 	end
+
+	def test_pig_latinify
+		assert_equal "hiay", @m.pig_latinify("    hI   ")
+		assert_equal "appleway", @m.pig_latinify("        apPlE    ")
+	end
+
 end
