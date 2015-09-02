@@ -37,12 +37,16 @@ module MethodsQuiz
 	end
 
 	def pig_latinify(str)
+		#removes all crap from string
 		final = str.delete(' ').downcase.gsub(/[^a-zA-Z ]/,'')
-		if final[0] == 'a' || 'e' || 'i' || 'o' || 'u'
-			return final + "way"
-		else
-			return final + "ay"
-		end
+		if final == "fuck" || final == "bitch" || final == "motherfucker" || final == "fucker" || final == "asshole" || final == "ass"
+			final.gsub()
+		else	
+			if final[0] == 'a' || final[0] == 'e' || final[0] == 'i' || final[0] == 'o' || final[0] == 'u'
+				return final + "way"
+			else
+				return final + "ay"
+			end
 	
 	end
 
