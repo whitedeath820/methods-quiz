@@ -40,13 +40,15 @@ module MethodsQuiz
 		#removes all crap from string
 		final = str.delete(' ').downcase.gsub(/[^a-zA-Z ]/,'')
 		if final == "fuck" || final == "bitch" || final == "motherfucker" || final == "fucker" || final == "asshole" || final == "ass"
-			final.gsub()
+			final2 = final.gsub(/[aeiou]/, '*')
+			return final2
 		else	
 			if final[0] == 'a' || final[0] == 'e' || final[0] == 'i' || final[0] == 'o' || final[0] == 'u'
 				return final + "way"
 			else
 				return final + "ay"
 			end
+		end
 	
 	end
 

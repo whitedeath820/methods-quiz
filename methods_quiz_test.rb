@@ -47,6 +47,7 @@ class MethodsQuizTest < MiniTest::Test
 	def test_pig_latinify
 		assert_equal "hiay", @m.pig_latinify("    hI 1  #&$%} ")
 		assert_equal "appleway", @m.pig_latinify("        apPlE    ")
+		assert_equal "f*ck", @m.pig_latinify("fuck28129448")
 	end
 
 end
