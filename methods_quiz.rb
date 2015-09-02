@@ -17,20 +17,24 @@ module MethodsQuiz
 		a > 100 && b < 0 || a < 0 && b > 100
 	end
 
-def closer_to(tar, ga, gb)
-	m1 = (tar - ga).abs
-	m2 = (tar - gb).abs
-	if m1 > m2
-		return gb
-	elsif m1 < m2
-		return ga
-	else
-		return 0
+	def closer_to(tar, ga, gb)
+		m1 = (tar - ga).abs
+		m2 = (tar - gb).abs
+		if m1 > m2
+			return gb
+		elsif m1 < m2
+			return ga
+		else
+			return 0
+		end
 	end
-	
-end
-	# TODO - write two_as_one?
 
+	def two_as_one?(a, b, c)
+		ab = a + b
+		ac = a + c
+		bc = b + c
+		ab == c || ac == b || bc == a
+	end
 	# TODO - write pig_latinify
 
 end
